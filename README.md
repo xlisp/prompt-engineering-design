@@ -1,8 +1,8 @@
 # prompt-engineering-design
 
 ## First principle
-- Make the prompt words more like a programming language and reduce the loss of dimension transformation
-- Reject vague tone and use absolute tone such as must.
+* Make the prompt words more like a programming language and reduce the loss of dimension transformation
+* Reject vague tone and use absolute tone such as must.
 
 - [prompt-engineering-design](#prompt-engineering-design)
   - [First principle](#first-principle)
