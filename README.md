@@ -86,6 +86,16 @@ Step2: ...
 ```python
 system = """Act as an expert software developer. ...."""
 ```
+
+## Python Code as input(Comment + PyCode) and output(need ast parse py), fill in the blank
+* json output parse sometimes unstable
+```python
+## Your problem {you question}, you MUST fill code in the blank:
+def get_weather():
+    api_weather({write you location xyz})
+...
+```
+
 ## Good Example, from ReAct init prompt
 
 ```python
