@@ -1,11 +1,20 @@
 # prompt-engineering-design
 
+## First principle
+- Make the prompt words more like a programming language and reduce the loss of dimension transformation
+- Reject vague tone and use absolute tone such as must.
+
 - [prompt-engineering-design](#prompt-engineering-design)
+  - [First principle](#first-principle)
   - [Output format notice](#output-format-notice)
   - [Grammar capitalization highlights tone, MUST](#grammar-capitalization-highlights-tone-must)
   - [Multiple variables](#multiple-variables)
   - [Extras Instructions](#extras-instructions)
   - [Step by step, first line describe your function](#step-by-step-first-line-describe-your-function)
+  - [UA List: user assistant](#ua-list-user-assistant)
+  - [System: Role define](#system-role-define)
+  - [Python Code as input(Comment + PyCode) and output(need ast parse py), fill in the blank](#python-code-as-inputcomment--pycode-and-outputneed-ast-parse-py-fill-in-the-blank)
+  - [Json in markdown parse](#json-in-markdown-parse)
   - [Good Example, from ReAct init prompt](#good-example-from-react-init-prompt)
 
 ## Output format notice
@@ -157,4 +166,3 @@ Start Executing the task:
 TASK: {{ task_description }}
 """
 ```
-
