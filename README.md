@@ -1,5 +1,13 @@
 # prompt-engineering-design
 
+- [prompt-engineering-design](#prompt-engineering-design)
+  - [Output format notice](#output-format-notice)
+  - [Grammar capitalization highlights tone, MUST](#grammar-capitalization-highlights-tone-must)
+  - [Multiple variables](#multiple-variables)
+  - [Extras Instructions](#extras-instructions)
+  - [Step by step, first line describe your function](#step-by-step-first-line-describe-your-function)
+  - [Good Example, from ReAct init prompt](#good-example-from-react-init-prompt)
+
 ## Output format notice
 
 ```txt
