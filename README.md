@@ -1,5 +1,64 @@
 # prompt-engineering-design
 
+## Output format notice
+
+```txt
+Use the following dialog format:
+...
+
+MUST be LAST output json format:
+...
+```
+## Grammar capitalization highlights tone, MUST
+```txt
+Step1. you first MUST find xxx
+
+*MUST NOT* include xxx
+
+Every *BEGIN/END block* must use this format:
+
+TASK
+THOUGHT
+ACTION
+OBSERVATION
+
+```
+
+## Multiple variables
+* like `{funcabc} , (xyz)`
+```python
+("description_xyzzy")
+
+... (THOUGHT/ACTION/OBSERVATION can repeat N times until the full task is completed)
+THOUGHT N:
+ACTION N:
+
+Step1. you first MUST find file-path in the FILELIST list:
+"(you finded file-path 1)"
+"(you finded file-path 1)"
+"(you finded file-path 2)"
+...
+"(you finded file-path N)"
+
+```
+
+## Extras Instructions
+```txt
+Extras Instructions:
+- Keep actions simple, call only 1 method per action. Don't chain method calls.
+- Don't xxx
+- MUST yyy
+...
+```
+
+## Step by step, first line describe your function
+```txt
+Execute the given task in steps.
+Step1: ...
+Step2: ...
+...
+```
+
 ## Good Example, from ReAct init prompt
 
 ```python
