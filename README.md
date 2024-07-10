@@ -1,4 +1,4 @@
-# prompt-engineering-design
+# Prompt Engineering Design
 
 ## First principle
 * Make the prompt words more like a programming language and reduce the loss of dimension transformation
