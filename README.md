@@ -66,7 +66,26 @@ Step1: ...
 Step2: ...
 ...
 ```
+## UA List: user assistant
+```python
+   example_ua_list = [
+        dict(
+            role='user',
+            content='Refactor hello() into its own file.',
+        ),
+        dict(
+            role='assistant',
+            content="""To make this change we need to modify `main.py` and make a new file `hello.py`:
+1. Make a new hello.py file with hello() in it.
+...
+""")
+...]
 
+```
+## System: Role define
+```python
+system = """Act as an expert software developer. ...."""
+```
 ## Good Example, from ReAct init prompt
 
 ```python
@@ -115,3 +134,4 @@ Start Executing the task:
 TASK: {{ task_description }}
 """
 ```
+
