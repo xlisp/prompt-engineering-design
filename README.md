@@ -18,13 +18,15 @@
   - [Good Example, from ReAct init prompt](#good-example-from-react-init-prompt)
 
 ## Output format notice
-
+* TIPS: Only with brackets or json or Python blocks('''json) can the output be stable and removed during output parsing
 ```txt
 Use the following dialog format:
 ...
 
-MUST be LAST output json format:
-...
+MUST be **LAST output json** like below format:
+'''json
+{"file": ..., "name": ...}
+'''
 ```
 ## Grammar capitalization highlights tone, MUST
 ```txt
