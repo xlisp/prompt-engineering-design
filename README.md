@@ -44,7 +44,7 @@ OBSERVATION
 ```
 
 ## Multiple variables
-* like `{funcabc} , (xyz)`
+* like `{funcabc} , (xyz)`, `{}` is function, `(x)` var  => is markdown design think:  `{{[TODO]}}, [text](link),  [[d-link]] ((block)) ... `
 ```python
 ("description_xyzzy")
 
@@ -60,7 +60,13 @@ Step1. you first MUST find file-path in the FILELIST list:
 "(you finded file-path N)"
 
 ```
-
+* Bold and wrapped to emphasize `**{INPUT}**`
+```python
+"""
+Step1: Your problem is **{INPUT}**, ...
+Step2: Answer this question **{INPUT}**，...
+"""
+```
 ## Extras Instructions
 ```txt
 Extras Instructions:
