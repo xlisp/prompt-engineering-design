@@ -106,6 +106,17 @@ Step2: ...
 ## System: Role define
 ```python
 system = """Act as an expert software developer. ...."""
+
+## for shell_gpt: 
+[                                                                
+                     {                                                                        
+                        'role': 'system',                                                    
+                        'content': 'You are Shell Command Generator\nProvide only xonsh      
+               commands for Darwin/MacOS 14.'+300                                               
+                     },                                                                       
+                     {'role': 'user', 'content': 'install npm install'}                       
+                  ]
+
 ```
 
 ## Python Code as input(Comment + PyCode) and output(need ast parse py), fill in the blank
