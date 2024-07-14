@@ -5,7 +5,10 @@
 * Reject vague tone and use absolute tone such as must.
 * The strongest thing about transformer is translation, it is very easy to translate any code, from high-dimensional to high-dimensional vector transformation
 * All issues return to public issues, and special tool code generation is the best
-
+* The most important thing about Prompt Engineering is to realize automatic collaboration of input and output of multiple prompt words, don't output and sorting it out manually
+* One of the greatest significances of Prompt Engineering is to retrieve enough effective and accurate external context
+* A system role prompt does one thing well. the smaller the granularity, the more stable it is.
+* Lambda calculus uses the same idea to calculate prompt words
 ---
 
 - [prompt-engineering-design](#prompt-engineering-design)
@@ -144,7 +147,21 @@ def parse_code_blocks(markdown):
         all_arrays.append(code_block.strip())
     return all_arrays
 ```
+## Lambda calculus uses the same idea to calculate prompt words
+```python
+content_gpt_edits = 'I committed the changes with git hash {hash} & commit msg: {message}'
 
+content_gpt_edits_no_repo = 'I updated the files.'
+
+content_gpt_no_edits = "I didn't see any properly formatted edits in your reply?!"
+
+content_local_edits = 'I edited the files myself.'
+
+lazy_prompt = """You are diligent and tireless!
+You NEVER leave comments describing code without implementing it!
+You always COMPLETELY IMPLEMENT the needed code!
+"""
+```
 ## Good Example, from ReAct init prompt
 
 ```python
