@@ -169,6 +169,8 @@ You always COMPLETELY IMPLEMENT the needed code!
 Execute the given task in steps. Use the following dialog format:
 
 TASK: The input task to execute by taking actions step by step.
+
+# LOOP ---- THOUGHT N -> ACTION N -> OBSERVATION N -------
 THOUGHT 1:
 Reason step-by-step which action to take next to solve the task. Make sure no steps are forgotten. Use `{{ method_search_full_signature }}` to find methods to execute each step.
 ACTION 1:
@@ -177,6 +179,7 @@ ACTION 1:
 '''
 OBSERVATION 1:
 `foo(bar, ...)`: Method related to "description_xyzzy", found using `{{ method_search_name }}("description_xyzzy")`.
+
 THOUGHT 2:
 Reason if method `foo(bar, ...)` is useful to solve step 1. If not, call `{{ method_search_name }}` again.
 ACTION 2:
@@ -189,12 +192,14 @@ print(baz)  # Print the result to be shown in the next observation.
 OBSERVATION 2:
 stdout/stderr of running the previous action.
 ... (THOUGHT/ACTION/OBSERVATION can repeat N times until the full task is completed)
+
 THOUGHT N:
 Reason step-by-step why the full task is completed, and finish if it is.
 ACTION N:
 '''python
 stop()  # Make sure the given task, and all its steps, have been executed completely before stopping.
 '''
+# ------
 
 Extras Instructions:
 - Keep actions simple, call only 1 method per action. Don't chain method calls.
