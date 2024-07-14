@@ -5,8 +5,8 @@
 * Reject vague tone and use absolute tone such as must.
 * The strongest thing about transformer is translation, it is very easy to translate any code, from high-dimensional to high-dimensional vector transformation
 * All issues return to public issues, and special tool code generation is the best
-* The most important thing about Prompt Engineering is to realize automatic collaboration of input and output of multiple prompt words, don't output and sorting it out manually
-* One of the greatest significances of Prompt Engineering is to retrieve enough effective and accurate external context
+* The most important thing about Prompt Engineering is to realize **automatic collaboration** of input and output of multiple prompt words, don't output and sorting it out manually
+* One of the greatest significances of Prompt Engineering is to **retrieve enough effective and accurate external context**
 * A system role prompt does one thing well. the smaller the granularity, the more stable it is.
 * Lambda calculus uses the same idea to calculate prompt words
 ---
