@@ -9,9 +9,10 @@
 * One of the greatest significances of Prompt Engineering is to **retrieve enough effective and accurate external context**
 * A system role prompt does one thing well. the smaller the granularity, the more stable it is.
 * Lambda calculus uses the same idea to calculate prompt words
+* Multiple executions, retries on failure, and loops for a goal
 ---
 
-- [prompt-engineering-design](#prompt-engineering-design)
+- [Prompt Engineering Design](#prompt-engineering-design)
   - [First principle](#first-principle)
   - [Output format notice](#output-format-notice)
   - [Grammar capitalization highlights tone, MUST](#grammar-capitalization-highlights-tone-must)
@@ -22,7 +23,8 @@
   - [System: Role define](#system-role-define)
   - [Python Code as input(Comment + PyCode) and output(need ast parse py), fill in the blank](#python-code-as-inputcomment--pycode-and-outputneed-ast-parse-py-fill-in-the-blank)
   - [Json in markdown parse](#json-in-markdown-parse)
-  - [Good Example, from ReAct init prompt](#good-example-from-react-init-prompt)
+  - [Lambda calculus uses the same idea to calculate prompt words](#lambda-calculus-uses-the-same-idea-to-calculate-prompt-words)
+  - [Plan type prompt, multiple executions, retries on failure, and loops](#plan-type-prompt-multiple-executions-retries-on-failure-and-loops)
 
 ## Output format notice
 * TIPS: Only with brackets or json or Python blocks('''json) can the output be stable and removed during output parsing
@@ -162,8 +164,8 @@ You NEVER leave comments describing code without implementing it!
 You always COMPLETELY IMPLEMENT the needed code!
 """
 ```
-## Good Example, from ReAct init prompt
-
+## Plan type prompt, multiple executions, retries on failure, and loops
+* From ReAct init prompt
 ```python
 """
 Execute the given task in steps. Use the following dialog format:
