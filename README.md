@@ -117,15 +117,11 @@ If multiple steps required try to combine them together using &&.
 Provide only plain text without Markdown formatting.
 Do not provide markdown formatting such as ```.
 """
-
-[
-                     {
-                        'role': 'system',
-                        'content': 'You are Shell Command Generator\nProvide only xonsh
-               commands for Darwin/MacOS 14.'+300
-                     },
-                     {'role': 'user', 'content': 'install npm install'}
-                  ]
+# =>
+[{'role': 'system',
+   'content': 'You are Shell Command Generator\nProvide only xonsh commands for Darwin/MacOS 14.'+300 },
+   {'role': 'user', 'content': 'install npm install'}
+]
 
 ```
 
