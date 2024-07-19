@@ -36,6 +36,11 @@ MUST be **LAST output json** like below format:
 '''json
 {"file": ..., "name": ...}
 '''
+
+You must find the key files according to the file list, no more than three, such as project usage instructions file 'README.md', project software dependency file 'package.json', MUST be **LAST output key point files json** like below format:
+'''json
+[file1, file2, ... fileN]
+'''
 ```
 ## Grammar capitalization highlights tone, MUST
 ```txt
