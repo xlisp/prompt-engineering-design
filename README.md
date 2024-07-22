@@ -181,6 +181,16 @@ User's question is: {input_question}
 Context is: {input_context}
 """
 ```
+## Use xml mark begin end
+
+```python
+(
+    'For bash commands, use <execute_bash> YOUR_COMMAND </execute_bash>.\n',
+    'For Python code, use <execute_ipython> YOUR_CODE </execute_ipython>.\n',
+    'For browsing, use <execute_browse> YOUR_COMMAND </execute_browse>.\n'
+)
+```
+
 ## Plan type prompt, multiple executions, retries on failure, and loops
 * From ReAct init prompt
 ```python
