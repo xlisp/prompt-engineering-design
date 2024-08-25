@@ -10,6 +10,7 @@
 * A system role prompt does one thing well. the smaller the granularity, the more stable it is.
 * Lambda calculus uses the same idea to calculate prompt words
 * Multiple executions, retries on failure, and loops for a goal
+* For complex logic algorithm problems, first generate Python code, and after confirming that it is generated correctly multiple times, use GPT to translate it into other language codes
 ---
 
 - [Prompt Engineering Design](#prompt-engineering-design)
