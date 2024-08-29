@@ -11,6 +11,7 @@
 * Lambda calculus uses the same idea to calculate prompt words
 * Multiple executions, retries on failure, and loops for a goal
 * For complex logic algorithm problems, first generate Python code, and after confirming that it is generated correctly multiple times, use GPT to translate it into other language codes
+* Prompt Engineering is like web design, rich in various elements and combinations
 ---
 
 - [Prompt Engineering Design](#prompt-engineering-design)
