@@ -1,7 +1,7 @@
 # Prompt Engineering Design
 
 ## First principle
-* Make the prompt words more like a programming language and reduce the loss of dimension transformation, Even use Python language directly as the prompt word itself
+* Make the prompt words more like a programming language and reduce the loss of dimension transformation, even use Python language directly as the prompt word itself
 * Reject vague tone and use absolute tone such as must.
 * The strongest thing about transformer is translation, it is very easy to translate any code, from high-dimensional to high-dimensional vector transformation
 * All issues return to public issues, and special tool code generation is the best
@@ -28,6 +28,7 @@
   - [Lambda calculus uses the same idea to calculate prompt words](#lambda-calculus-uses-the-same-idea-to-calculate-prompt-words)
   - [Plan type prompt, multiple executions, retries on failure, and loops](#plan-type-prompt-multiple-executions-retries-on-failure-and-loops)
   - [Guide the reasoning process](#guide-the-reasoning-process)
+  - [Use Python code as prompt](#use-python-code-as-prompt)
 
 ## Output format notice
 * TIPS: Only with brackets or json or Python blocks('''json) can the output be stable and removed during output parsing
@@ -501,4 +502,27 @@ what did you do?
 did you use the <answer_operator>? Y/N
 answer the above question with Y or N at each output.
 </rules>
+```
+## Use python code as prompt
+* you can use other language to define prompt
+```python
+＃Please complete the code content according to the context, and keep the code as concise as possible.
+＃Note:
+#1. Only output the code content, no other extensions and explanations.
+#2. Only functions provided by the context are allowed to be called in the completed code
+#3. Only one line of code is allowed
+
+{{FUNCTIONS}}
+
+def answer():
+    """ {{QUESTIONS}}, should be call function """
+
+def get_weather(location: str, time: str) -> List[str]:
+    """Query the weather conditions for a specific location and time
+    Parameters:
+    location: str, location to query
+    time: str, time to query
+    Returns:
+    List[str], weather forecast by the hour
+    """
 ```
