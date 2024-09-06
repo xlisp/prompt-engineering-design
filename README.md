@@ -1,7 +1,7 @@
 # Prompt Engineering Design
 
 ## First principle
-* Make the prompt words more like a programming language and reduce the loss of dimension transformation
+* Make the prompt words more like a programming language and reduce the loss of dimension transformation, Even use Python language directly as the prompt word itself
 * Reject vague tone and use absolute tone such as must.
 * The strongest thing about transformer is translation, it is very easy to translate any code, from high-dimensional to high-dimensional vector transformation
 * All issues return to public issues, and special tool code generation is the best
